@@ -3,6 +3,8 @@ import { connect } from 'react-redux';
 import { getVideoRequest} from './actions/video-actions'
 import './App.css';
 
+import Tile from './Tile'
+
 class App extends Component {
   componentDidMount () {
     this.props.getVideoRequest()
@@ -19,11 +21,8 @@ class App extends Component {
 
     return (
       <div className="app">
-        <header className="app__header">
-          <h1 className="app__main-heading">{`Hello!  This is the <App /> component!  Please render your tile component in .app__body below`}</h1>
-        </header>
         <div className="app__body">
-          {/* TODO: <Tile /> component here */}
+          {<Tile />}
         </div>
       </div>
     );

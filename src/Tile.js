@@ -15,7 +15,7 @@ class Tile extends Component {
 
   render(){
     return(
-      <img src={tileImgSimple}/>
+      <img src={tileImgSimple} style={{width:420}}/>
     )
   }
 }
